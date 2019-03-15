@@ -2,6 +2,7 @@
   <div id="app">
     <header>
       <div>
+          <router-link v-if="this.$store.state.show" to="/sign">SignUp View</router-link>
           <router-link v-if="this.$store.state.show" to="/login">login View</router-link>
           <router-link v-if="this.$store.state.userUid" to="/main">main View</router-link>
       </div>

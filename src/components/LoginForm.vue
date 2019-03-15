@@ -9,7 +9,6 @@
             <label for="password"></label>
             <input type="password" id="password" v-model="password">
        </div>
-            <button @click.prevent="signUp">sign up</button>
             <button @click.prevent="loginUser">login</button>
    </form>
    </div>
@@ -27,15 +26,6 @@ export default {
     }
   },
   methods: {
-    signUp () {
-      firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
-        .then((user) => {
-          console.log(user)
-        })
-        .catch((error) => {
-          console.log(error)
-        })
-    },
     loginUser () {
       firebase.auth().signInWithEmailAndPassword(this.email, this.password)
         .then((user, show) => {
