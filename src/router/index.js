@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 import Router from 'vue-router'
 import LoginView from '../views/LoginView.vue'
 import MainView from '../views/MainView.vue'
+import SignView from '../views/SignView.vue'
 import store from '../store/index.js'
 // import Hello from '@/components/Hello'
 
@@ -15,6 +16,11 @@ export default new Router({
     {
       path: '/',
       redirect: '/login'
+    },
+    {
+      path: '/sign',
+      name: 'sign',
+      component: SignView
     },
     {
       path: '/login',
