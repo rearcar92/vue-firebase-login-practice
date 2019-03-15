@@ -1,7 +1,6 @@
 <template>
     <div class="wrap">
         <login-form></login-form>
-        <hello></hello>
     </div>
 </template>
 
