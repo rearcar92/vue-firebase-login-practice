@@ -7,7 +7,6 @@
 
 <script>
 import LoginForm from '../components/LoginForm.vue'
-import Hello from '../components/Hello.vue'
 
 export default {
   name: 'LoginView',
